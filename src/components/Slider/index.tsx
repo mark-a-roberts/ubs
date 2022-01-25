@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
 
-export default function Slider() {
+interface SpendProps {
+    min: number;
+    max: number;
+}
+
+export default function Slider( props: SpendProps) {
 
     return (
         <div className={'slider'}>
-            <input type={'range'} min={0} max={100}/>
+            <input type={'range'} min={props.min} max={props.max}/>
         </div>
     );
 }
