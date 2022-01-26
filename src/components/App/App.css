@@ -26,3 +26,29 @@
     text-align: center;
 }
 
+.slider {
+    width: 300px;
+}
+
+.slider input {
+    width: 280px;
+}
+
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav > ul li {
+    list-style: none ;
+}
+
+li.nav-right:before {
+    content: "\27a4";
+}
+
+li.nav-down:before {
+    content: "\25bc";
+}
+
