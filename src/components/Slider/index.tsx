@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import {AppContext} from "../App";
+import {SpendContext} from "../App/SpendContext";
 
 interface SpendProps {
     name: string;
@@ -13,7 +13,7 @@ interface SpendProps {
  * @constructor
  */
 export default function Slider( props: SpendProps) {
-    const { onChange } = useContext(AppContext);
+    const { onChange } = useContext(SpendContext);
     const [spend, setSpend] = useState(1);
 
     return (

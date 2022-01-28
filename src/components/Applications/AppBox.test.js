@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AppBox from './index';
+import AppBox from './AppBox';
 
 it('renders without crashing', () => {
     const div = document.createElement('div');

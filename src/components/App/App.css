@@ -45,10 +45,13 @@ nav > ul li {
 }
 
 li.nav-right:before {
-    content: "\27a4";
+    content: "\2586";
 }
 
 li.nav-down:before {
     content: "\25bc";
 }
 
+nav ul li span.selected {
+    background: chartreuse;
+}
