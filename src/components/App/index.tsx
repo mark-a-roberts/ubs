@@ -26,24 +26,34 @@ function App() {
 
     // @ts-ignore
     return (
-        <SpendContextProvider max={max}>
-            <CapContextProvider>
-                <div>
-                    <h1>Pharos Coding Exercise</h1>
-                    <div className={'row'}>
-                        <div className={'col1'}>
-                            <Capabilities apps={apps} />
-                            <hr/>
-                            <Slider max={max.spend} min={min.spend} name={'Spending'}/>
-                        </div>
-                        <div className={'col2'}>
-                            <ApplicationList apps={apps} max={max} min={min}/>
-                        </div>
-                    </div>
-                </div>
-            </CapContextProvider>
+        <div>
+            <header>
+                <h1>
+                    <img className="logo__img logo__img--default" alt="UBS logo, to home page"
+                         src="/UBS_Logo_Semibold.svg" />
+                    Pharos Coding Exercise
+                </h1>
 
-        </SpendContextProvider>
+            </header>
+            <main>
+                <SpendContextProvider max={max}>
+                    <CapContextProvider>
+                            <div className={'row'}>
+                                <div className={'col1'}>
+                                    <Capabilities apps={apps} />
+                                    <hr/>
+                                    <Slider max={max.spend} min={min.spend} name={'Spending'}/>
+                                </div>
+                                <div className={'col2'}>
+                                    <ApplicationList apps={apps} max={max} min={min}/>
+                                </div>
+                            </div>
+                    </CapContextProvider>
+
+                </SpendContextProvider>
+            </main>
+        </div>
+
     );
 }
 
